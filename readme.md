@@ -9,6 +9,9 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 ### Prerequisites
 
 [//]: # (What things you need to install the software and how to install them```Give examples```)
+**Pixelman** - *Particulate Capturing* - [Download Location](http://aladdin.utef.cvut.cz/ofat/others/Pixelman/Pixelman_download.html) - Download from here as only this version solely works with the script
+**Python** - *To Run the Script* - [Download Location](https://www.python.org/downloads/release/python-2713/) - It may work with newer versions, but I haven't tested it with anything newer
+
 
 ### Installing
 
@@ -16,7 +19,11 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
 ## Built With
 
-* []() -
+### Python Libraries
+
+* [ZipFile](https://docs.python.org/2/library/zipfile.html) - For Zipping the Particle Data
+* [OS](https://docs.python.org/2/tutorial/stdlib.html) - For properly interacting with the Operating System
+* []() - 
 
 ## Contributing
 

@@ -1,4 +1,6 @@
 #Here is where I import all of the modules I require
+import zipfile
+import os
 
 
 
@@ -13,6 +15,39 @@ user_option = int(input("What do you wish to do today? \n Type 1 to run with def
 #Number 1 does the defaults, a simple loading from file of the basic commands
 def UsrOpt1():
     print("UsrOpt1")
+    #################
+    #Data Collection#
+    #################
+    #File Collection number count
+    count = int(00000)
+    #number cycle iteration thingy
+
+
+    ################
+    #Data Packaging#
+    ################
+
+
+    #This is the line that grabs the data from a certain location and packes them up
+    #Zip Name
+    zpname = 'TPIX-' + count
+    #Joining the two directory components together, the location and the File Name
+    dir_name = os.path.join('C:\\Users\\XXX\\Documents\\TaptonPIX\\TPIX', zpname)
+    Imaginary_zip = zipfile.ZipFile(dir_name, 'w')
+
+    #Change it here as well
+    for folder, subfolders, files in os.walk('C:\\Users\\XXX\\Documents\\TaptonPIX'):
+
+        for file in files:
+            if file.endswith('.txt.dsc') and file.endswith('.txt'):
+                Imaginary_zip.write(os.path.join(folder, file), os.path.relpath(os.path.join(folder,file), 'C:\\Users\\XXX\\Documents\\TaptonPIX'), compress_type = zipfile.ZIP_DEFLATED)
+
+    Imaginary_zip.close()
+
+    ##############
+    #Data Sending#
+    ##############
+
 
 #Number 2 allows the user to edit any of the options necessary; <insert options here>
 def UsrOpt2():
