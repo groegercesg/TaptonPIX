@@ -1,7 +1,7 @@
 #Here is where I import all of the modules I require
 import zipfile
 import os
-
+import requests
 
 
 
@@ -30,7 +30,7 @@ def UsrOpt1():
 
     #This is the line that grabs the data from a certain location and packes them up
     #Zip Name
-    zpname = 'TPIX-' + count
+    zpname = 'TPIX-' + count + '.zip'
     #Joining the two directory components together, the location and the File Name
     dir_name = os.path.join('C:\\Users\\XXX\\Documents\\TaptonPIX\\TPIX', zpname)
     Imaginary_zip = zipfile.ZipFile(dir_name, 'w')
@@ -40,13 +40,42 @@ def UsrOpt1():
 
         for file in files:
             if file.endswith('.txt.dsc') and file.endswith('.txt'):
-                Imaginary_zip.write(os.path.join(folder, file), os.path.relpath(os.path.join(folder,file), 'C:\\Users\\XXX\\Documents\\TaptonPIX'), compress_type = zipfile.ZIP_DEFLATED)
+                Imaginary_zip.write(os.path.join(folder, file), file, compress_type = zipfile.ZIP_DEFLATED)
 
     Imaginary_zip.close()
 
     ##############
     #Data Sending#
     ##############
+
+    #Demo borrowed from: https://github.com/InstituteForResearchInSchools/tapas-api-demos/blob/master/uploading-zip-file.py - By Will Furnell
+
+
+
+    file_path = dirname  # The path to the ZIP file you want to upload. Make sure it exists!
+
+    # Use the following when uploading to TAPAS, not the local development site
+    API_BASE_URL = "https://tapas.researchinschools.org/"
+
+    #
+    headers = {
+        'Authorization': 'Token 5e865d620e7cc43ddb3b7ff8e3ee5728f27b258e',  # You MUST include the 'Token' part here before the API token
+    }
+
+    #Fill out the payload fields,
+    payload = {
+        'name': 'Name of Upload',  # Name of the upload, can be whatever you like, but make it meaningful
+        'project': '1',  # You MUST specify a project in ID form here!
+                         # You can check all project IDs via the API too :)
+        'latitude': '1',  # Latitude of where data was taken, needed if you choose RAY as a project
+        'longitude': '1',  # Longitude of where data was taken, needed if you choose RAY as a project
+    }
+
+    # The / at the end of upload is VERY important here! You'll get an Internal Server Error without it.
+    # .... I speak from experience
+    r = requests.post(API_BASE_URL + "/api/v1/upload/", files={"zipfile": open(file_path, 'rb')}, data=payload, headers=headers)
+
+    print(r.text)
 
 
 #Number 2 allows the user to edit any of the options necessary; <insert options here>

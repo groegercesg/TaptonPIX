@@ -23,7 +23,7 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
 * [ZipFile](https://docs.python.org/2/library/zipfile.html) - For Zipping the Particle Data
 * [OS](https://docs.python.org/2/tutorial/stdlib.html) - For properly interacting with the Operating System
-* []() - 
+* [Requests](http://docs.python-requests.org/en/master/) - For interacting with the TAPAS api, it's simply a requirement
 
 ## Contributing
 
@@ -41,7 +41,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.mdLICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/groegercesg/TaptonPIX/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
