@@ -13,7 +13,7 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 **Python** - *To Run the Script* - [Download Location](https://www.python.org/downloads/release/python-2713/) - It may work with newer versions, but I haven't tested it with anything newer
 
 
-### Installing
+[//]: # (### Installing)
 
 [//]: # (A step by step series of examples that tell you have to get a development env runningSay what the step will be```Give the example```And repeat```until finished```End with an example of getting some data out of the system or using it for a little demo)
 
