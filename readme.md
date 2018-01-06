@@ -33,20 +33,20 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 
 ## Project Progress
 
-Functionality Still Required:
+**Functionality Still Required:**
 * Modification of Pixelman API options
 * Storing of Pixelman options in json (**?**) for portability
 * Actually finish the program, so it works!
 * Then complete UsrOpt2 function functionality
 
-Functionality Desired:
+**Functionality Desired:**
 * Alterting system to notify if file stops running
 * Consider finding some way to not miss gaps in the data collection, as I'm pretty sure there are gaps in the recording.
 * Make it easier to run
 * Running on Raspberry Pi Zero (w?)/ something light and ARM-based potentially (**?**)
 * Remote website data thing, can't think of the words for it, but basically a control/data panel - using Grafana?
 
-Functionality That Will Never Happen But Is Nice To Dream Of:
+**Functionality That Will Never Happen But Is Nice To Dream Of:**
 * *The Cloud...*
 * ^ No, no one wants that.
 
