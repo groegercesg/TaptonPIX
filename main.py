@@ -24,17 +24,17 @@ def UsrOpt1():
     for count in range(999):
 
         #This is the calling of the Pixelman API - directly, following from a helpful guide on:
-        # http://aladdin.utef.cvut.cz 
+        # http://aladdin.utef.cvut.cz
         devID=0 #Device number, this being the number, in classic array style, of sensors plugged into the computer
         acqTime=1 #Time between Acquisitions, measured in seconds
         acqCount=10 #Number of Acquisition
         for i in range(10):
             #
-            name = 'TPIX-' + count
+            tp = 'TPIX-'
+            name = tp + str(count)
             dir_name = os.path.join('C:\\Users\\XXX\\Documents\\TaptonPIX\\TPIX', name)
-            fileName = os.path.join(dir_name, "DatPIX-" + i + ".txt")
+            fileName = os.path.join(dir_name, "DatPIX-" + str(i) + ".txt")
             pixelman.mpxCtrlPerformFrameAcq(devID, acqCount, acqTime, pixelman.FSAVE_ASCII | pixelman.FSAVE_SPARSEX, fileName)
-
 
 
 
@@ -45,16 +45,16 @@ def UsrOpt1():
 
         #This is the line that grabs the data from a certain location and packes them up
         #Zip Name
-        zname = 'TPIX-' + count + '.zip'
+        #zname = 'TPIX-' + count + '.zip'
         #Joining the two directory components together, the location and the File Name
-        dir_name_z = os.path.join('C:\\Users\\XXX\\Documents\\TaptonPIX\\TPIX', zname)
+        dir_name_z = os.path.join(dir_name + ".zip")
         Imaginary_zip = zipfile.ZipFile(dir_name_z, 'w')
 
         #Change it here as well
-        for folder, subfolders, files in os.walk('C:\\Users\\XXX\\Documents\\TaptonPIX'):
+        for folder, subfolders, files in os.walk(dir_name):
 
             for file in files:
-                if file.endswith('.txt.dsc') and file.endswith('.txt'):
+                if file.endswith('.txt'):
                     Imaginary_zip.write(os.path.join(folder, file), file, compress_type = zipfile.ZIP_DEFLATED)
 
         Imaginary_zip.close()
@@ -65,23 +65,24 @@ def UsrOpt1():
 
     #Demo borrowed from: https://github.com/InstituteForResearchInSchools/tapas-api-demos/blob/master/uploading-zip-file.py - By Will Furnell
 
-        file_path = dirname  # The path to the ZIP file you want to upload. Make sure it exists!
+        file_path = dir_name_z  # The path to the ZIP file you want to upload. Make sure it exists!
 
         # Use the following when uploading to TAPAS, not the local development site
         API_BASE_URL = "https://tapas.researchinschools.org/"
 
-        #
+        #Need to change this
         headers = {
             'Authorization': 'Token 5e865d620e7cc43ddb3b7ff8e3ee5728f27b258e',  # You MUST include the 'Token' part here before the API token
         }
 
         #Fill out the payload fields,
         payload = {
-            'name': 'Name of Upload',  # Name of the upload, can be whatever you like, but make it meaningful
+            'name': 'TaptonPIX-' + count,  # Name of the upload, can be whatever you like, but make it meaningful
             'project': '1',  # You MUST specify a project in ID form here!
                              # You can check all project IDs via the API too :)
-            'latitude': '1',  # Latitude of where data was taken, needed if you choose RAY as a project
-            'longitude': '1',  # Longitude of where data was taken, needed if you choose RAY as a project
+            #These aren't super necessary but I guess it can be put in if need be!
+            #'latitude': '1',  # Latitude of where data was taken, needed if you choose RAY as a project
+            #'longitude': '1',  # Longitude of where data was taken, needed if you choose RAY as a project
         }
 
         # The / at the end of upload is VERY important here! You'll get an Internal Server Error without it.
@@ -94,6 +95,9 @@ def UsrOpt1():
 #Number 2 allows the user to edit any of the options necessary; <insert options here>
 def UsrOpt2():
     print("UsrOpt2")
+    print("Not currently functional, maybe in a bit!")
+    print("Check the GitHub for updates")
+    #break
 
 #Number 3 allows the user to view information about the program
 def UsrOpt3():
@@ -123,7 +127,8 @@ while user_option == 1:
 while user_option == 2:
     print("Proceding with User Option 2")
     UsrOpt2()
-    #break
+    #Comment this out when the script is working, ok?
+    break
 
 #This runs the UsrOpt3 function when user_option is equal to 3.
 while user_option == 3:
