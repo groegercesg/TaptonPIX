@@ -29,7 +29,29 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
 [//]: # (Please read CONTRIBUTING.mdhttps://gist.github.com/PurpleBooth/b24679402957c63ec426 for details on our code of conduct, and the process for submitting pull requests to us.)
 
-## Versioning
+This might be filled in soon, but at the moment (as we're in development stage) we're not currently accepting and contributions/forks/pull requests.
+
+## Project Progress
+
+Functionality Still Required:
+* Modification of Pixelman API options
+* Storing of Pixelman options in json (**?**) for portability
+* Actually finish the program, so it works!
+* Then complete UsrOpt2 function functionality
+
+Functionality Desired:
+* Alterting system to notify if file stops running
+* Consider finding some way to not miss gaps in the data collection, as I'm pretty sure there are gaps in the recording.
+* Make it easier to run
+* Running on Raspberry Pi Zero (w?)/ something light and ARM-based potentially (**?**)
+* Remote website data thing, can't think of the words for it, but basically a control/data panel - using Grafana?
+
+Functionality That Will Never Happen But Is Nice To Dream Of:
+* *The Cloud...*
+* ^ No, no one wants that.
+
+
+
 
 [//]: # (We use SemVerhttp://semver.org/ for versioning. For the versions available, see the tags on this repositoryhttps://github.com/your/project/tags.)
 
