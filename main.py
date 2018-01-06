@@ -23,6 +23,8 @@ def UsrOpt1():
     #number cycle iteration thingy
     for count in range(999):
 
+        #This is the calling of the Pixelman API - directly, following from a helpful guide on:
+        # http://aladdin.utef.cvut.cz 
         devID=0 #Device number, this being the number, in classic array style, of sensors plugged into the computer
         acqTime=1 #Time between Acquisitions, measured in seconds
         acqCount=10 #Number of Acquisition
@@ -30,8 +32,11 @@ def UsrOpt1():
             #
             name = 'TPIX-' + count
             dir_name = os.path.join('C:\\Users\\XXX\\Documents\\TaptonPIX\\TPIX', name)
-            fileName1 = dir_name  "c:\\folder\\rep%02d_.txt" % i
+            fileName = os.path.join(dir_name, "DatPIX-" + i + ".txt")
             pixelman.mpxCtrlPerformFrameAcq(devID, acqCount, acqTime, pixelman.FSAVE_ASCII | pixelman.FSAVE_SPARSEX, fileName)
+
+
+
 
     ################
     #Data Packaging#
@@ -59,8 +64,6 @@ def UsrOpt1():
     ##############
 
     #Demo borrowed from: https://github.com/InstituteForResearchInSchools/tapas-api-demos/blob/master/uploading-zip-file.py - By Will Furnell
-
-
 
         file_path = dirname  # The path to the ZIP file you want to upload. Make sure it exists!
 
