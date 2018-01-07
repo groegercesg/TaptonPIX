@@ -43,9 +43,9 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
 6. Then you should ready to go.
 
-7. In the Scenario that step 5 didn't work, them run this:
+7. In the Scenario that Step 5 didn't work, them run this:
 
-`py -m site --user-site`
+> py -m site --user-site
 
   - The replace the section at the end, "site-packages" with "Scripts"
   - Then insert it into your Environment Variables [PATH](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx)
@@ -80,25 +80,25 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 ## Project Progress
 
 **Functionality Still Required:**
-* Modification of Pixelman API options
-* Storing of Pixelman options in json (**?**) for portability
-* ~~Actually finish the main program functionality, so it works!~~
-* Then complete UsrOpt2 function functionality
-* Finish Mark Down install guide for Windows
-* Finish Mark Down install guide for Linux
-* ~~Make sure it complies with Pep 8~~
-* Test program using sensor
+- [ ] Modification of Pixelman API options
+- [ ] Storing of Pixelman options in json (**?**) for portability
+- [x] Actually finish the main program functionality, so it works!
+- [ ] Then complete UsrOpt2 function functionality
+- [ ] Finish Mark Down install guide for Windows
+- [ ] Finish Mark Down install guide for Linux
+- [x] Make sure it complies with Pep 8
+- [ ] Test program using sensor
 
 **Functionality Desired:**
-* Alterting system to notify if file stops running
-* Consider finding some way to not miss gaps in the data collection, as I'm pretty sure there are gaps in the recording.
-* Make it easier to run
-* Running on Raspberry Pi Zero (w?)/ something light and ARM-based potentially (**?**)
-* Remote website data thing, can't think of the words for it, but basically a control/data panel - using Grafana?
+- [ ] Alterting system to notify if file stops running
+- [ ] Consider finding some way to not miss gaps in the data collection, as I'm pretty sure there are gaps in the recording.
+- [ ] Make it easier to run
+- [ ] Running on Raspberry Pi Zero (w?)/ something light and ARM-based potentially (**?**)
+- [ ] Remote website data thing, can't think of the words for it, but basically a control/data panel - using Grafana?
 
 **Functionality That Will Never Happen But Is _Nice_ To Dream Of:**
-* *The Cloud...*
-* ^ No, no one wants that.
+- [ ] *The Cloud...*
+- [x] ^ No, no one wants that.
 
 
 
