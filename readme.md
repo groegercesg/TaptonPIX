@@ -43,10 +43,11 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 **Functionality Still Required:**
 * Modification of Pixelman API options
 * Storing of Pixelman options in json (**?**) for portability
-* Actually finish the program, so it works!
+* ~~Actually finish the main program functionality, so it works!~~
 * Then complete UsrOpt2 function functionality
 * Finish Mark Down install guide
 * ~~Make sure it complies with Pep 8~~
+* Test program using sensor
 
 **Functionality Desired:**
 * Alterting system to notify if file stops running
