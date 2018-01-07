@@ -10,7 +10,9 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
 [//]: # (What things you need to install the software and how to install them```Give examples```)
 **Pixelman** - *Particulate Capturing* - [Download Location](http://aladdin.utef.cvut.cz/ofat/others/Pixelman/Pixelman_download.html) - Download from here as only this version solely works with the script
+
 **Python** - *To Run the Script* - [Download Location](http://docs.python-guide.org/en/latest/starting/install3/win/#install3-windows) - Install (if you don't have it already) using this guide to get all the additional third-party packages.
+
 **Requests** - *Used for the Tapas api* - [Download Location](http://docs.python-requests.org/en/master/user/install/#install) - Install using `pip`, which hopefully you just did!
 
 
