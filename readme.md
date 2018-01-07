@@ -11,15 +11,54 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 [//]: # (What things you need to install the software and how to install them```Give examples```)
 **Pixelman** - *Particulate Capturing* - [Download Location](http://aladdin.utef.cvut.cz/ofat/others/Pixelman/Pixelman_download.html) - Download from here as only this version solely works with the script
 
-**Python** - *To Run the Script* - [Download Location](http://docs.python-guide.org/en/latest/starting/install3/win/#install3-windows) - Install (if you don't have it already) using this guide to get all the additional third-party packages.
+**Python** - *To Run the Script* - [Download Location](http://docs.python-guide.org/en/latest/starting/install3/win/#install3-windows) - Follow the instructions in the Installing Section.
 
-**Requests** - *Used for the Tapas api* - [Download Location](http://docs.python-requests.org/en/master/user/install/#install) - Install using `pip`, which hopefully you just did!
+**Requests** - *Used for the Tapas api* - [Download Location](http://docs.python-requests.org/en/master/user/install/#install) - Install using `pip`, instructions found below.
 
 
 
 ### Installing
 
+#### Windows
 
+1. Install [Pixelman](http://aladdin.utef.cvut.cz/ofat/others/Pixelman/Pixelman_download.html),  and verify it's running with the sensor attached.
+
+2. Install the latest version of [Python](https://www.python.org/downloads/), with all the options. Especially the path variable. **If** this option doesn't arrive the first time round, then re-run the installer and select _Modify_ before selecting _pip_ in the Optional Features section and _Environment Variables_ in Advanced Options.
+
+3. Then run `Win + R` and type `cmd` to open the command line. From there type:
+
+> python -m pip install -U pip
+
+  - To check that pip was correctly installed
+
+4. Then use `pip` to install to install Pipenv:
+
+> pip install --user pipenv
+
+5. Then navigate to the TaptonPIX directory, using `cd` before typing:
+
+> pipenv install requests
+
+  - If this doesn't work then see below
+
+6. Then you should ready to go.
+
+7. In the Scenario that step 5 didn't work, them run this:
+
+`py -m site --user-site`
+
+  - The replace the section at the end, "site-packages" with "Scripts"
+  - Then insert it into your Environment Variables [PATH](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx)
+  - Also you probably should restart after this, so do do that.
+
+
+#### Mac OS X
+
+This won't happen, ever.
+
+#### Linux
+
+Coming...
 
 
 [//]: # (A step by step series of examples that tell you have to get a development env runningSay what the step will be```Give the example```And repeat```until finished```End with an example of getting some data out of the system or using it for a little demo)
@@ -45,7 +84,8 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 * Storing of Pixelman options in json (**?**) for portability
 * ~~Actually finish the main program functionality, so it works!~~
 * Then complete UsrOpt2 function functionality
-* Finish Mark Down install guide
+* Finish Mark Down install guide for Windows
+* Finish Mark Down install guide for Linux
 * ~~Make sure it complies with Pep 8~~
 * Test program using sensor
 
@@ -56,7 +96,7 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 * Running on Raspberry Pi Zero (w?)/ something light and ARM-based potentially (**?**)
 * Remote website data thing, can't think of the words for it, but basically a control/data panel - using Grafana?
 
-**Functionality That Will Never Happen But Is Nice To Dream Of:**
+**Functionality That Will Never Happen But Is _Nice_ To Dream Of:**
 * *The Cloud...*
 * ^ No, no one wants that.
 
