@@ -84,7 +84,7 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 - [ ] Storing of Pixelman options in json (**?**) for portability
 - [x] Actually finish the main program functionality, so it works!
 - [ ] Then complete UsrOpt2 function functionality
-- [ ] Finish Mark Down install guide for Windows
+- [x] Finish Mark Down install guide for Windows
 - [ ] Finish Mark Down install guide for Linux
 - [x] Make sure it complies with Pep 8
 - [ ] Test program using sensor
