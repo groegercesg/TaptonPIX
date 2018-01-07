@@ -46,7 +46,7 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 * Actually finish the program, so it works!
 * Then complete UsrOpt2 function functionality
 * Finish Mark Down install guide
-* ~~ Make sure it complies with Pep 8 ~~
+* ~~Make sure it complies with Pep 8~~
 
 **Functionality Desired:**
 * Alterting system to notify if file stops running
