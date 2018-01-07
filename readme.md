@@ -10,7 +10,9 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
 [//]: # (What things you need to install the software and how to install them```Give examples```)
 **Pixelman** - *Particulate Capturing* - [Download Location](http://aladdin.utef.cvut.cz/ofat/others/Pixelman/Pixelman_download.html) - Download from here as only this version solely works with the script
-**Python** - *To Run the Script* - [Download Location](https://www.python.org/downloads/release/python-2713/) - It may work with newer versions, but I haven't tested it with anything newer
+**Python** - *To Run the Script* - [Download Location](http://docs.python-guide.org/en/latest/starting/install3/win/#install3-windows) - Install (if you don't have it already) using this guide to get all the additional third-party packages.
+**Requests** - *Used for the Tapas api* - [Download Location](http://docs.python-requests.org/en/master/user/install/#install) - Install using `pip`, which hopefully you just did!
+
 
 
 [//]: # (### Installing)
@@ -68,3 +70,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 ## Acknowledgments
 
 * [IRIS](http://www.researchinschools.org/) - The Institute of Research In Schools
+* [MX-10](http://www.particlecamera.com/index.php) - The MX-10 Digital Particle Camera
+* [IEAP](http://aladdin.utef.cvut.cz/ofat/others/Pixelman/index.html) - Pixelman software developed by the Czech Technical University in Prague
