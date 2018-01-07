@@ -63,7 +63,7 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 
 * **Callum** - *Initial work* - [Groegercesg](https://www.c-e.sg/)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+[//]: # (See also the list of contributors https://github.com/your/project/contributors who participated in this project.)
 
 ## License
 
