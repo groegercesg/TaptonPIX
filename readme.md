@@ -97,7 +97,7 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 - [ ] Remote website data thing, can't think of the words for it, but basically a control/data panel - using Grafana?
 
 **Functionality That Will Never Happen But Is _Nice_ To Dream Of:**
-- [ ] *The Cloud...*
+- [x] *The Cloud...*
 - [x] ^ No, no one wants that.
 
 
