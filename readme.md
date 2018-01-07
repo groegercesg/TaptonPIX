@@ -17,7 +17,10 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
 
 
-[//]: # (### Installing)
+### Installing
+
+
+
 
 [//]: # (A step by step series of examples that tell you have to get a development env runningSay what the step will be```Give the example```And repeat```until finished```End with an example of getting some data out of the system or using it for a little demo)
 
@@ -42,6 +45,8 @@ This might be filled in soon, but at the moment (as we're in development stage) 
 * Storing of Pixelman options in json (**?**) for portability
 * Actually finish the program, so it works!
 * Then complete UsrOpt2 function functionality
+* Finish Mark Down install guide
+* ~~ Make sure it complies with Pep 8 ~~
 
 **Functionality Desired:**
 * Alterting system to notify if file stops running
