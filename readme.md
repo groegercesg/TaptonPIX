@@ -15,7 +15,13 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
 **Requests** - *Used for the Tapas api* - [Download Location](http://docs.python-requests.org/en/master/user/install/#install) - Install using `pip`, instructions found below.
 
+**Java** - *Used for Jython* - [Download Location](https://java.com/en/download/) - Get version 8, use the installer; then restart.
 
+**Jython** - *Necessary for running the script within the Python plugin* - [Download Location](http://www.jython.org/downloads.html) - Install it, just the installer one (Version 2.7.0), to do this download and then use the cmd (`Win` + `R` and `cmd`) then `cd` to the download directory to run:
+
+> java -jar jython_installer-2.7.0.jar
+
+And then restart.
 
 ### Installing
 
@@ -41,7 +47,7 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
 
   - If this doesn't work then see below
 
-6. Then you should ready to go.
+6. Then you should ready to get ready to go.
 
 7. In the Scenario that Step 5 didn't work, them run this:
 
@@ -51,6 +57,7 @@ This is a program for automated data collection using Pixelman, MX-10 and the TA
   - Then insert it into your Environment Variables [PATH](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx)
   - Also you probably should restart after this, so do do that.
 
+8. Next, run the `pixelman.exe` from the download location and use the Pixelman menu to navigate _Script_ -> _Python Scripting_ to reach the Python Scripting panel. Then copy the code from the `.py` into the panel and click `Run Script` to start the script.
 
 #### Mac OS X
 

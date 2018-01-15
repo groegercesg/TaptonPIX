@@ -37,7 +37,7 @@ def UsrOpt1():
             tp = 'TPIX-'
             name = tp + str(count)
             dir_name = os.path.join(
-                                    'C:\\Users\\XXX\\Documents'
+                                    'C:\\Users\\IRIS\\Documents'
                                     '\\TaptonPIX\\TPIX', name)
             fileName = os.path.join(dir_name, "DatPIX-" + str(i) + ".txt")
             # Some automatic concatenation going on here, might not
@@ -84,7 +84,7 @@ def UsrOpt1():
 
         # Need to change this
         headers = {
-            'Authorization': 'Token 5e865d620e7cc43ddb3b7ff8e3ee5728f27b258e',
+            'Authorization': 'Token f3ee92cfba04e23b7911b201926635aae28da703',
             # You MUST include the 'Token' part here before the API token
         }
 
