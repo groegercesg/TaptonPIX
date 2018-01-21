@@ -57,7 +57,7 @@ And then restart.
   - Then insert it into your Environment Variables [PATH](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx)
   - Also you probably should restart after this, so do do that.
 
-8. Next, run the `pixelman.exe` from the download location and use the Pixelman menu to navigate _Script_ -> _Python Scripting_ to reach the Python Scripting panel. Then copy the code from the `.py` into the panel and click `Run Script` to start the script.
+8. Next, run the `pixelman.exe` from it's download location and use the Pixelman menu to navigate _Script_ -> _Python Scripting_ to reach the Python Scripting panel. Then copy the code from the `.py` file into the panel and click `Run Script` to start the script.
 
 #### Mac OS X
 
