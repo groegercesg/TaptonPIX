@@ -57,7 +57,15 @@ And then restart.
   - Then insert it into your Environment Variables [PATH](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx)
   - Also you probably should restart after this, so do do that.
 
-8. Next, run the `pixelman.exe` from it's download location and use the Pixelman menu to navigate _Script_ -> _Python Scripting_ to reach the Python Scripting panel. Then copy the code from the `.py` file into the panel and click `Run Script` to start the script.
+8. Next you need to download the Plugin to run python (through Jython) within Pixelman; this can be found at:
+
+> http://www.widepix.cz/downloads/PythonScripting.zip
+
+  - Extract that zip and then copy everything into the Pixelman software directory
+  - Allow overwrites to occur and then check that the file `jmpxloader.ini` lists `JScripting.jar`, this is essential.
+
+9. Finally, run the `pixelman.exe` from it's download location (You may notice that upon boot it loads the JScripting, if it doesn't (the rest won't apply) and you should retry the steps) and use the Pixelman menu to navigate _Script_ -> _Python Scripting_ to reach the Python Scripting panel. Then copy the code from the `.py` file into the panel and click `Run Script` to start the script.
+
 
 #### Mac OS X
 
